@@ -1,0 +1,24 @@
+{
+  "name": "learn",
+  "version": "1.0.0",
+  "description": "learn",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devsong/js-learn.git"
+  },
+  "author": "guanzhisong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devsong/js-learn/issues"
+  },
+  "homepage": "https://github.com/devsong/js-learn#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "lodash": "^4.17.11",
+    "utility": "^1.15.0"
+  }
+}
