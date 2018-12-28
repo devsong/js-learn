@@ -2,15 +2,33 @@
 <html>
 
 <head>
+    <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="css/base.css" />
 </head>
 
 <body>
-    <input type="button" onClick="testObjectLoop0()" value="test0" />
-    <input type="button" onClick="testObjectLoop1()" value="test1" />
-    <input type="button" onClick="testAlert()" value="alert" />
-    <input type="button" onClick="testConfirm()" value="confirm" />
+    <div id="container">
+        <input type="button" onClick="testObjectLoop0()" value="test0" />
+        <input type="button" onClick="testObjectLoop1()" value="test1" />
+        <input type="button" onClick="testAlert()" value="alert" />
+        <input type="button" onClick="testConfirm()" value="confirm" />
 
+        <div id="selector">
+            <p id="text"> test text</p>
+            <input type="text" value="" placeholder="focus text" />
+            <ul>
+                <li class="ul-li">first</li>
+                <li class="ul-li">second</li>
+                <li class="ul-li">three</li>
+                <li class="ul-li">forth</li>
+            </ul>
+        </div>
+        <a href="http://www.baidu.com" target="blank">百度一下</a>
+
+        <div class="box">
+            <p> this is box</p>
+        </div>
+    </div>
     <script type="text/javascript" src="js/jquery-1.7.2.min.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/index.js" charset="utf-8"></script>
 </body>

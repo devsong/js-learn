@@ -1,27 +1,25 @@
-var obj = {
-  name: 'gzs',
-  age: 11,
-  gender: 0,
-};
+$(document).ready(function () {
+    loopDoc();
+    $(selector).click(function (e) {
+        e.preventDefault();
+    });
+    $('#container input[type="text"]').focus();
 
-function testObjectLoop0() {
-  for (k in Object.getOwnPropertyNames(obj)) {
-    console.log(k);
-  }
-  console.log(alert.toString());
-  console.log('fib:' + fib(6));
-}
+    $('#container input[type="text"]').focus(function (e) {
+        e.preventDefault();
+        // alert('I am focus');
+        console.log('I am focus');
+        console.log($(this)[0].nodeType === Node.ELEMENT_NODE);
+    });
+    $('a').click(function (e) {
+        e.preventDefault();
+        return true;
+    });
+});
 
-function testObjectLoop1() {
-  for (var k in Object.keys(obj)) {
-    alert(k);
-  }
-}
-
-function fib(n) {
-  if (n === 1 || n === 0) {
-    return n;
-  } else {
-    return fib(n - 2) + fib(n - 1);
-  }
+function loopDoc() {
+    for (var i = 0; i < document.childNodes.length; i++) {
+        var node = document.childNodes[i];
+        console.log(node.nodeType);
+    }
 }

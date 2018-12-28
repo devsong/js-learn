@@ -1,1 +1,93 @@
 @charset "utf-8";
+body {
+    display: block;
+    margin: 0px;
+    box-sizing: content-box;
+    font: 15px;
+    background: #cececd;
+}
+
+#container {
+    display: block;
+    background: #afb491;
+    margin: 20px auto;
+    width: 1280px;
+    height: auto;
+}
+
+.box-container {
+    margin: 8px;
+    background: #57be7a;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background: pink;
+    float: left;
+    position: relative;
+    top: 10px;
+}
+
+.box-padding {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    background: #0e3a09;
+    float: left;
+}
+
+.box-border {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    border: #000000 10px solid;
+    background: #a0b624;
+    float: left;
+}
+
+.box-margin {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    border: #000000 10px solid;
+    margin: 10px;
+    background: #52225e;
+    float: left;
+}
+
+.pos-container {
+    display: block;
+    margin: 20px auto;
+    background: #9ac6cc;
+}
+
+.pos1 {
+    position: relative;
+    left: 100px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    background: #062403;
+}
+
+.pos2 {
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    background: #a0b624;
+}
+
+.fixed {
+    width: 32px;
+    height: 20px;
+    text-align: center;
+    background: #9ac6cc;
+    font-family: serif;
+    font-size: 15px;
+    position: fixed;
+    bottom: 600px;
+    right: 10px;
+    border: #52225e 2px solid;
+    cursor: pointer;
+}

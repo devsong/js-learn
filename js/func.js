@@ -4,10 +4,34 @@ function fib(n) {
   }
   return fib(n - 2) + fib(n - 1);
 }
+$.ajax({
+  type: "method",
+  url: "url",
+  data: "data",
+  dataType: "dataType",
+  success: function (response) {
+
+  }
+});
 
 function arg(a, b, c) {
+  console.log(arguments.length);
   console.log(a + '' + b + c);
 }
 
+function closureFunc() {
+  var i = 0;
+
+  function innerFunc() {
+    console.log(i++);
+  }
+  return innerFunc;
+}
+
 // console.log(fib(5))
-arg(undefined, 1, 2);
+// arg(undefined, 1, 2);
+// var f = closureFunc();
+// f();
+// f();
+eval('var a = 1;');
+console.log(a);
