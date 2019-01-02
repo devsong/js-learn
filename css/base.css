@@ -92,3 +92,15 @@ body {
     border: #52225e 2px solid;
     cursor: pointer;
 }
+
+.cf::before {
+    content: 'before';
+    border: 1px solid #52225e;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.cf::after {
+    content: 'after';
+    clear: both;
+}
