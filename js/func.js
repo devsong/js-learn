@@ -4,15 +4,6 @@ function fib(n) {
   }
   return fib(n - 2) + fib(n - 1);
 }
-$.ajax({
-  type: "method",
-  url: "url",
-  data: "data",
-  dataType: "dataType",
-  success: function (response) {
-
-  }
-});
 
 function arg(a, b, c) {
   console.log(arguments.length);
