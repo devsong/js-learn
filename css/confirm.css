@@ -11,25 +11,24 @@
 }
 
 .alert-msg-div {
-    position: absolute;
-    background: #E8E8E8;
+    position: fixed;
+    background: rgb(230, 222, 222);
     text-align: center;
-    margin-left: -225px;
     border: 1px solid rgb(40, 121, 228);
     line-height: 25px;
-    top: 40%;
-    left: 40%;
+    top: 30%;
+    left: 30%;
     font: 12px/1.6em Verdana, Geneva, Arial, Helvetica, sans-serif;
-    opacity: 0.6;
     z-index: 10001;
 }
 
 .alert-title-div {
     margin: 0;
+    text-align: left;
     padding: 5px;
     background: rgb(40, 121, 228);
     opacity: 0.75;
-    border: 1px solid rgb(40, 121, 228);
+    border: 2px solid rgb(40, 121, 228);
     height: 25px;
     font: 12px Verdana, Geneva, Arial, Helvetica, sans-serif;
     color: white;
@@ -43,6 +42,8 @@
 .alert-btn {
     margin: 20px;
     padding: 5px;
+    width: 80px;
+    font: 12px Verdana, Geneva, Arial, Helvetica, sans-serif;
 }
 
 .alert-btn-enable {
@@ -50,5 +51,6 @@
 }
 
 .alert-btn-disable {
-    background: rgb(211, 199, 199);
+    background: rgb(165, 158, 158);
+    cursor: not-allowed;
 }
