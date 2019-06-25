@@ -1,8 +1,5 @@
 // 自定义弹框浮层
 // 初始计时器值
-titleheight = 25 // 提示窗口标题高度
-bordercolor = "#336699"; // 提示窗口的边框颜色
-titlecolor = "#99CCFF"; // 提示窗口的标题颜色
 $(document).ready(function () {
     $('#btn').click(function (e) {
         customConfirm.confirm({
@@ -16,7 +13,7 @@ $(document).ready(function () {
             cancelBtnCallback: function () {
                 console.log('cancel clicked');
             },
-            initCountdown: 500,
+            initCountdown: 5,
             atLastShow: 3,
             elapse: 0,
             width: '400px',
@@ -59,6 +56,7 @@ var customConfirm = {
     init: function (option) {
         // init variables
         customConfirm.op.flag = 0;
+        customConfirm.op.elapse = 0;
         customConfirm.op.title = option.title || customConfirm.op.title;
         customConfirm.op.body = option.body || customConfirm.op.body;
         customConfirm.op.width = option.width || customConfirm.op.width;
@@ -144,7 +142,7 @@ var customConfirm = {
             return;
         }
         if (customConfirm.op.elapse >= customConfirm.op.initCountdown) {
-            customConfirm.closeWindow(op);
+            customConfirm.closeWindow();
             customConfirm.op.flag = 1;
             customConfirm.op.elapse = 0;
             return false;
@@ -152,7 +150,7 @@ var customConfirm = {
             customConfirm.op.elapse++;
             var okBtn = document.getElementById("alertOkBtn")
 
-            if (customConfirm.op.elapse > customConfirm.op.atLastShow) {
+            if (customConfirm.op.elapse >= customConfirm.op.atLastShow) {
                 okBtn.setAttribute('class', 'alert-btn alert-btn-enable');
             } else {
                 okBtn.setAttribute('class', 'alert-btn alert-btn-disable');

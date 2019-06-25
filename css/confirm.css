@@ -14,7 +14,7 @@
     position: fixed;
     background: rgb(230, 222, 222);
     text-align: center;
-    border: 1px solid rgb(40, 121, 228);
+    border: 1px solid rgb(119, 172, 241);
     line-height: 25px;
     top: 30%;
     left: 30%;
@@ -26,9 +26,9 @@
     margin: 0;
     text-align: left;
     padding: 5px;
-    background: rgb(40, 121, 228);
+    background: rgb(119, 172, 241);
     opacity: 0.75;
-    border: 2px solid rgb(40, 121, 228);
+    border: 2px solid rgb(119, 172, 241);
     height: 25px;
     font: 12px Verdana, Geneva, Arial, Helvetica, sans-serif;
     color: white;
